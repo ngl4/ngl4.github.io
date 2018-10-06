@@ -65,10 +65,11 @@
     #contact {
 
         height: 100%;
-        background: url("../images/background-1.jpg");
+        background: url("../images/background-1.jpg")  no-repeat 20% 50%;
         background-position-y: 60em;
         background-position-x: 100em;
         padding-bottom: 10%;
+        opacity: 0.7;
 
 
     }
