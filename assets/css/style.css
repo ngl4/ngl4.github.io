@@ -1,101 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Marmelad', sans-serif;
 
-    
-    #home-page {
-        background: url("../images/background-1.jpg");
-        height: 55em;
+}
 
+.horizontal-scroll-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 80px;
+    white-space: nowrap
+}
+
+.bg-color {
+    background-color: black;
+}
+
+.bg-font {
+    color: white;
+}
+
+.underline-dash {
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+}
+
+.intro-font {
+    color: black;
+}
+
+a:hover {
+    color: lightcoral;
+}
+
+#logo-img {
+    background-image: url("../images/mylogoDesignDec2018.png");
+    background-size: contain;
+    height: 50%;
+    width: auto;
+    background-repeat: no-repeat;
+}
+
+#logo-img:hover {
+    background-image: url("../images/mylogoDesignDec2018-hover.png");
+    /* height: 100%;
+    width: 100%; */
+}
+
+@keyframes animate {
+    from {
+        background-position: 0px 0px;
     }
 
-    #myPhoto {
-
-        background: url("../images/myPhoto.jpg");
-        height: 15em;
-        background-position-x: 0em;
-        background-size: 100%;
-        /* opacity: 0.9; */
-        background-repeat: no-repeat;
-        background-color: gray;
-
+    to {
+        background-position: 100% 0px;
     }
 
-    #introduction {
+}
 
-        height: 200%;
-        background-color: lightsteelblue;
-        padding-bottom: 10%;
-
-
+@-webkit-keyframes animate {
+    from {
+        background-position: 0px 0px;
     }
 
-    #experience {
-
-        height: 100%;
-        background-color: lightgray;
-        padding-bottom: 5%;
-
+    to {
+        background-position: 100% 0px;
     }
-
-    #skills {
-
-        height: 100%;
-        background-color: lightblue;
-        padding-bottom: 10%;
-
-    }
+}
 
 
-    #portfolios {
+.bg-line {
+    position: relative;
+    background: url("../images/line3.png");
+    height: 83vh;
+    background-size: cover;
+    background-position: 0px 0px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    animation: animate 10s linear forwards;
+    -webkit-animation: animate 10s linear forwards;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease-out;
+    z-index: -1;
+    opacity: 0.3;
+}
 
-        height: 100%;
-        background-color: lightslategrey;
-        padding-bottom: 10%;
+.bg-line-midline {
+    position: relative;
+    background: url("../images/line3.png");
+    height: 25vh;
+    background-size: cover;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    animation: animate 10s linear forwards;
+    -webkit-animation: animate 10s linear forwards;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease-out;
+    z-index: 1;
+    opacity: 0.3;
+}
 
-    }
+.showDescription {
+    display: none;
+}
 
+.projects:hover .showDescription{
+    display: block;
+    z-index: 2;
+    background-color: gray;
+    opacity: 0.8;
+}
 
-    #hobbies {
-
-        height: 100%;
-        background-color: lightgrey;
-        padding-bottom: 10%;
-
-    }
-
-
-    #contact {
-
-        height: 100%;
-        background: url("../images/background-1.jpg")  no-repeat 20% 50%;
-        background-position-y: 60em;
-        background-position-x: 100em;
-        padding-bottom: 10%;
-        opacity: 0.7;
-
-
-    }
-
-    #home-page-text {
-        font-family: 'Salsa', cursive;
-        font-size: 200%;
-    }
-
-    .title {
-        font-family: 'Salsa', cursive;
-        font-size: 200%;
-    }
-
-    .uk-slideshow-items {
-        min-height: 330px !important;
-        min-width: 330px !important;
-        max-height: 400px !important;
-        max-width: 550px !important;
-    }
-
-    .uk-slideshow {
-
-        min-height: 330px !important;
-        min-width: 330px !important;
-        max-height: 400px !important;
-        max-width: 550px !important;
-
-    }
