@@ -59,8 +59,8 @@
     .content-box {
         grid-column-start: 2;
         grid-column-end: 10;
-        grid-row-start: 5;
-        grid-row-end: 6;
+        grid-row-start: 3;
+        grid-row-end: 4;
         min-width: 250px;
         /* margin-left: -25px !important; */
     }
@@ -124,6 +124,17 @@
         grid-column-end: 8;
         grid-row-start: 4;
         grid-row-end: 6;
+        min-width: 250px;
+        margin-left: -35px !important;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .content-logo {
+        grid-column-start: 6;
+        grid-column-end: 8;
+        grid-row-start: 4;
+        grid-row-end: 5;
         min-width: 250px;
         margin-left: -35px !important;
     }
